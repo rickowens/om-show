@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                om-show
-version:             0.1.1.0
+version:             0.1.1.1
 synopsis:            Utilities for showing string-like things.
 -- description:         
 homepage:            https://github.com/owensmurray/om-show
@@ -23,7 +23,7 @@ library
   -- other-extensions:    
   build-depends:
     aeson >= 1.4.2.0 && < 1.5,
-    base  >= 4.9     && < 4.13,
+    base  >= 4.13    && < 4.14,
     text  >= 1.2.3.1 && < 1.3
   hs-source-dirs: src
   default-language: Haskell2010

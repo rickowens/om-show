@@ -4,13 +4,13 @@
 name:                om-show
 version:             0.1.1.1
 synopsis:            Utilities for showing string-like things.
--- description:         
+description:         Utilities for showing string-like things.
 homepage:            https://github.com/owensmurray/om-show
 license:             AllRightsReserved
 license-file:        LICENSE
 author:              Rick Owens
 maintainer:          rick@owensmurray.com
-copyright:           2017 Owens Murray, LLC.
+copyright:           2021 Owens Murray, LLC.
 category:            Text
 build-type:          Simple
 extra-source-files:  README.md

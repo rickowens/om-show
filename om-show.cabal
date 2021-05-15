@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                om-show
-version:             0.1.1.1
+version:             0.1.1.2
 synopsis:            Utilities for showing string-like things.
 description:         Utilities for showing string-like things.
 homepage:            https://github.com/owensmurray/om-show

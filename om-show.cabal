@@ -1,6 +1,6 @@
 cabal-version:       3.0
 name:                om-show
-version:             0.1.2.2
+version:             0.1.2.3
 synopsis:            Utilities for showing string-like things.
 description:         Utilities for showing string-like things.
 homepage:            https://github.com/owensmurray/om-show
@@ -11,7 +11,10 @@ maintainer:          rick@owensmurray.com
 copyright:           2021 Owens Murray, LLC.
 category:            Text
 build-type:          Simple
-extra-source-files:  README.md
+extra-source-files:
+  README.md
+  LICENSE
+
 
 common dependencies
   build-depends:

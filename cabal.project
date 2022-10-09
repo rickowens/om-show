@@ -1,0 +1,4 @@
+packages: .
+pacakge om-show
+  ghc-options:
+    -Werror

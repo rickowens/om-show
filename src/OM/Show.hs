@@ -20,12 +20,27 @@ showt :: (Show a, IsString b) => a -> b
 showt = fromString . show
 
 
-{- | Show the JSON representation as any kind of string-like thing. -}
+{- |
+  Show the JSON representation as any kind of string-like thing.
+  Primarily useful for dumping JSON values into log messages without having to
+  jump through too many hoops.
+-}
 showj :: (ToJSON a, IsString b) => a -> b
 showj = fromString . TL.unpack . TLE.decodeUtf8 . encode
 
 
-{- | Wrapper whose 'Show' instance outputs JSON. -}
+{- |
+  Wrapper whose 'Show' instance outputs JSON.
+
+  Especially useful with `-XDerivingVia`
+  e.g.
+
+  > newtype Foo = Foo SomeType
+  >   deriving Show via (ShowJ SomeType)
+
+  This will cause @show (foo :: Foo) to output the JSON representation
+  of SomeType.
+-}
 newtype ShowJ a = ShowJ a
   deriving stock (Eq, Ord)
   deriving newtype (ToJSON)
